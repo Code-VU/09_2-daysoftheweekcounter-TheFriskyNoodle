@@ -3,7 +3,6 @@ def countDayOfTheWeek():
     file_name = input("Enter a file name: ")
     handle = open(file_name)
     counts = dict()
-    days = list()
     for line in handle:
         if line.startswith("From"):
             if len(line.split()) > 2:
